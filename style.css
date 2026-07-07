@@ -1,0 +1,90 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+@media screen and (min-width:650px){
+    .box{
+        background-color:goldenrod;
+    }
+}
+@media  screen and (max-width:480px) {
+    .box{
+        display: none;
+    }
+    
+}
+
+/* 1 rem =16px */
+@media  screen and (min-width:769px) and (max-width:1279px){
+    .box{
+        width: 100%;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    
+}
+.container{
+    width: 300px;
+    height:200px;
+    background-color:plum;
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .container{
+        width: 100%;
+        background-color:yellow;
+    }
+    
+}
+
+h1{
+    animation: Colorchanging 0.5s 0s 5;
+}
+@keyframes Colorchanging{
+    from{
+        color: black;
+
+    }
+    to{
+        color: orange;
+    }
+}
+.spinner {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+
+    animation: Rotatecolor 1s 0s infinite ;
+}
+
+@keyframes Rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes Rotatecolor{
+0%{
+    background-color: orange;
+    trabsform:rotate(0deg);
+}
+20%{
+    background-color: yellow;
+    transform: rotate(20deg);
+}
+30%{
+    background-color: blueviolet;
+    transform: rotate(30deg);
+}
+70%{
+    background-color: skyblue;
+    transform: rotate(60deg);
+}
+100%{
+    background-color: cadetblue;
+    transform: rotate(100deg);
+}
+}
